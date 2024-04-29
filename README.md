@@ -54,18 +54,18 @@ This anechoic chamber is used to measure the radiation pattern of the antenna at
 ## Hardware setup
 <img width="613" alt="image" src="https://github.com/cmu-spacecraft-design-build-fly-2023/anechoic-chamber/assets/75640543/e1423b4a-d541-428a-9fcd-1e255c3e4a53">
 
-1.	Build a rectangular room using the plywood. Depending on the size of your chamber, ensure that there are doors or trapdoors for easy access to the device under test (port 2) and the horn antenna (port 1).
+1.	Build a rectangular room using the plywood. Depending on the size of your chamber, ensure that there are doors or trapdoors for easy access to the device under test (port 1) and the horn antenna (port 2).
 2.	Cover the walls, floor, and ceiling of the room with the foam absorbers, including the door, but leave a space for the motor and the antenna.
 3.	In relation to where the device under test will be placed, set up the motor and PVC pipe directly under that spot, and place the horn antenna on the wall such that it is level with, centered on, and directly faces this spot.
 4.	Connect the horn antenna to the vector network analyzer with a coaxial cable.
 5.	Connect another coaxial cable to the VNA and attach the other end to the PVC pipe. 
 6.	Connect the VNA to the Raspberry Pi through USB.
 7.	Connect the motor controller to the Raspberry Pi through USB.
-8.	Calibrate the LibreVNA at your desired frequency range by attaching open circuit, short circuit, and 50 ohm dummy loads to port 2. 
+8.	Calibrate the LibreVNA at your desired frequency range by attaching open circuit, short circuit, and 50 ohm dummy loads to port 1. 
 ## How to use
 <img width="433" src="https://github.com/cmu-spacecraft-design-build-fly-2023/anechoic-chamber/assets/75640543/3b25730e-15df-4a29-b81a-0d52f8656855">
 
-1.	Connect the antenna under test to the port 2 coaxial cable and secure it with tape, making note of the antenna’s orientation in relation to the horn antenna.
+1.	Connect the antenna under test to the port 1 coaxial cable and secure it with tape, making note of the antenna’s orientation in relation to the horn antenna.
 2.	Edit `.config` for your specific measurement (See step 3 in Software setup)
 3.	Close the chamber door and run `antenna_pattern.py`
 4.	After the measurement has finished, the plot and raw measurements will be stored in the same directory as `antenna_pattern.py`. 

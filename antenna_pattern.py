@@ -88,5 +88,5 @@ if __name__ == "__main__":
     ax.plot(angles, norm_vals)
     ax.grid(True)
     ax.set_title(f"Radiation Pattern for {config['freq'] / 1e6:.3f} MHz")
-    ax.set_ylim([min(config['plot_min'], np.min(vals)),0])
+    ax.set_ylim([min(config['plot_min'], np.min(norm_vals)),0])
     plt.savefig(f"plot{timestamp}.png")

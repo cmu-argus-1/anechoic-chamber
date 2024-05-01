@@ -10,6 +10,9 @@
 
 This anechoic chamber is used to measure the radiation pattern of the antenna at different angles, which was important for determining nulls on the finished satellite that may differ from the idealized pattern for our dipole antenna due to the chassis, batteries, and other metal-containing parts of the satellite. Here is our low-cost Raspberry Pi-based setup which is ideal for educational purposes.
 
+<img width="894" alt="image" src="https://github.com/cmu-spacecraft-design-build-fly-2023/anechoic-chamber/assets/75640543/d5985b70-83bf-4920-924d-c092646f4a15">
+
+
 ## Dependencies
 ### Software
 -	Python 3.7+
